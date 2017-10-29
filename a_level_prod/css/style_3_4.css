@@ -1,0 +1,67 @@
+.flex {
+    display: flex;
+    height: 150px;
+    background: #9ba5b3;  padding: 5px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: fit-content;
+    border: 2px solid black;
+}
+p {
+    display: table;
+    margin: 0;
+    text-align: center;
+    padding-left: 0;
+    width: 42px;
+}
+text {
+    display: table-caption;
+    caption-side: top;
+}
+.itm1, .itm2, .itm3, .itm4, .itm5, .itm6, .itm7, .itm8 {
+    border: 1px solid black;
+    }
+.itm1{
+    height: 70px;
+    background: red;
+}
+.itm2{
+    height: 50px;
+    background: blue;
+}
+.itm3{
+    height: 30px;
+    background: green;
+}
+.itm4{
+    height: 100px;
+    background: papayawhip;
+}
+.itm5{
+    height: 90px;
+    background: rosybrown;
+}
+.itm6{
+    height: 60px;
+    background: skyblue;
+}
+.itm7{
+    height: 10px;
+    background: pink;
+}
+.itm8{
+    height: 35px;
+    background: purple;
+}
+#row:checked ~ .flex {
+    flex-direction: row;
+}
+#row-reverse:checked ~ .flex {
+    flex-direction: row-reverse;
+}
+.flex:hover{
+    opacity:1;
+    z-index: 100; /*на кого навели тот и круче, тот и показывается*/
+}
+
+

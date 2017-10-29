@@ -1,0 +1,19 @@
+адвантрии
+
+alexandergorshkov@students.a-level.com.ua
+ls
+
+cd /	next folder
+ls list files
+ls -al -la 
+
+rwx 111 r-x 101 r-- 100
+
+chmod 755 txt.txt
+
+mkdir create folder
+
+cd .....
+
+vim index.html
+
