@@ -1,0 +1,54 @@
+.layout {
+    display:flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -webkit-flex-flow: row wrap;
+}
+.layout DIV {
+    float: left;
+    padding: 0 10px 10px 10px;
+    height: 100%;
+}
+.layout img{
+    width: 100%;
+}
+.col1, .col2, .col3 {
+    background: white;
+    width: calc(100%/3 - 20px);
+}
+.layout .col{
+    width: 100%;
+    float: right;
+}
+div{
+    padding:20px;
+}
+.shadow{
+    box-shadow: 0 0 5px 2px;
+    -webkit-flex-flow: row wrap;
+}
+.header, .footer {
+    padding: 10px 20px 10px 20px;
+    overflow: visible;
+    background: white;
+}
+header .aside {
+    background: white;
+    padding: 0 10px 0 10px;
+    width: calc(100%/8);
+    float: left;
+    position: inherit;
+    min-width: 10%;
+   }
+.shadow .down {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+.mid{
+    position: relative; /*make mid undepend of footer*/
+    flex-wrap: wrap;
+    float: left;
+}
