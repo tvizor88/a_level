@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+* {
+    box-sizing: border-box;
+    max-width: 100%; /* пробовать менять ибо стоит только для слайдера*/
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #6B6B6B;
+    background: #F2F2F2;
+    font-family: 'Open Sans', sans-serif;
+}
+.header-link{      /* черная полоска с "линками"*/
+    width: 100%;
+    background: #363636;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 75px;
+    z-index: 100;
+    padding: 25px;
+    vertical-align: middle;
+    text-align: right;
+}
+.header-link a:first-child{     /* module 1 style*/
+    font-size: 20px;
+    color: #DADADA;
+    position: fixed;
+    left: 10px;
+}
+.header-link a{          /* all oyher links in header*/
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 12px;
+    position: static;
+    padding-left: 15px;
+    transition-duration: 1s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+
+}
+.header-link a:hover:not(:first-child){   /* moove all links right+style*/
+    color: #DA4453;
+
+}
+
+
+.slider a img{
+    max-width: 100%;
+    padding-top: 75px;
+    position: relative;
+    vertical-align: middle;
+    max-height: fit-content;
+}
+
+
+h2{
+
+    top		: -200px;
+    left		:calc(100% - 1200px);
+    width		: 100%;
+    background:  rgba(218, 68, 83, 0.7);
+    font-size: 24px;
+    color: #FFFFFF;
+    margin: 0px;
+    max-width: fit-content;
+    padding: 12px 20px;
+}
+p{
+
+    top		: -200px;
+    left		: 250px;
+    width		: 50%;
+    background:  rgba(59, 59, 59, 0.8);
+    color:  #DDDDDD;
+    padding: 12px 20px;
+    max-width: 600px;
+
+    margin: 0;
+
+}
+
+
+p, h1 {
+    margin: 0;
+}
+
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+main {
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+main section {
+    max-width: 780px;
+    width: 70%;
+    padding: 15px;
+    float: left;
+}
+
+main article {
+    color: #6B6B6B;
+    font-size: 1.4rem;
+}
+
+main article img {
+    transition: opacity 0.5s;
+    vertical-align: middle;
+}
+
+main article img:hover {
+    opacity: 0.8;
+}
+
+main article .article-content {
+    background: #fff;
+    border: 1px solid #dadada;
+    padding: 45px 50px;
+}
+
+main article .article-content .article-heading {
+    font-family: Roboto Slab;
+    color: #444444;
+    text-decoration: none;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+
+main article .article-content .article-heading:hover {
+    color: #DA4453;
+}
+
+main article .article-content .article-meta {
+    margin-bottom: 30px;
+}
+
+main article .article-content .article-meta a {
+    font-size: 1.3rem;
+    color: #6B6B6B;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+main article .article-content .article-meta a:last-child {
+    margin-right: 0;
+}
+
+main article .article-content p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+main article .article-content .article-actions {
+    text-align: right;
+}
+
+main article .article-content .article-actions .read-more {
+    background: #DA4453;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 11px 13px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: background 0.5s;
+    border: 1px solid transparent;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+main article .article-content .article-actions .read-more:hover {
+    background: #000;
+    border-color: #000;
+}
+.footer-link { /* черная полоска с "линками"*/
+    width: 100%;
+    background: #363636;
+    height: 75px;
+    z-index: 100;
+    padding: 25px;
+    vertical-align: middle;
+    text-align: left;
+}
+.footer-link a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 12px;
+    position: static;
+    padding-left: 15px;
+    transition-duration: 1s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+}
+footer div a{
+    max-width: 1170px;
+}
